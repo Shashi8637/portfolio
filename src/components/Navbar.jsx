@@ -5,7 +5,7 @@ import { FaBars, FaGithub, FaTimes } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Resume from '../assets/shashi_Resume.pdf';
+import Resume from '../assets/Resume.pdf';
 
 function Navbar() {
   const [nav, setNav] = useState(false);

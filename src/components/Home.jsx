@@ -1,5 +1,7 @@
 import React from 'react'
 import { HiArrowRight } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -8,6 +10,11 @@ import { HiArrowRight } from 'react-icons/hi'
 
 function Home() {
 
+  const workRef = React.createRef(); // Create a ref for the work section
+
+  const handleClick = () => {
+    workRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   
 
@@ -31,11 +38,17 @@ function Home() {
           designing) exceptional digital experiences. Currently, I’m focused on
           building responsive full-stack web applications.
         </p>
-        <div >
-          <button className='text-white group border-2 px-6 py-3 my-2 flex item-center hover:border-pink-600'>View Work
-          <span className='group-hover:rotate-90 duration-300'> <HiArrowRight className='ml-3'/></span>
 
-          </button>
+        <div >
+         
+        <div>
+            <Link to="work" ref={workRef} onClick={handleClick} className='text-white group border-2 px-6 py-3 my-2 flex item-center hover:border-pink-600 h-1/3 w-1/4'>
+              View Work
+              <span className='group-hover:rotate-90 duration-300'>
+                <HiArrowRight className='ml-3' />
+              </span>
+            </Link>
+          </div>
          
         </div>
 

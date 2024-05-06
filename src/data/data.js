@@ -1,5 +1,6 @@
 import upload from '../assets/projects/upload.png'
 import task from '../assets/projects/task.png'
+import remove from '../assets/projects/remove.png'
 
 
 export const data = [
@@ -20,9 +21,9 @@ export const data = [
   {
     id: 3,
     name: "",
-    git: "",
-    img: "",
-    live: "",
+    git: "https://github.com/Shashi8637/removeBgAndResize",
+    img: remove,
+    live: "https://remove-bg-and-resize.vercel.app/",
   },
   
 ];

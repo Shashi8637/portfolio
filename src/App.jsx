@@ -6,17 +6,19 @@ import About from './components/About';
 import Skills from './components/Skill';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
 
 function App() {
 
-  
   return (
     <div>
       <Navbar/>
-      <Home /> 
+      <BrowserRouter>
+      <Home />  {/* Your Home component goes here */}
+    </BrowserRouter>
       <About />
       <Skills />
       <Work/>
